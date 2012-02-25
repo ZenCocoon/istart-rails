@@ -1,7 +1,6 @@
-require "istart-rails/version"
-
 module Istart
   module Rails
-    require 'istart/engine'
+    require "istart/rails/engine"
+    require "istart/rails/version"
   end
 end
