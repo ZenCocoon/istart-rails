@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["public@zencocoon.com"]
   s.homepage    = ""
   s.summary     = %q{Assets helpers to speed up new app development}
-  s.description = %q{A set of common helpers to improve your app and speed up ew app development}
+  s.description = %q{iStart-Rails is a set of common helpers to improve your app and speed up it's development}
 
   s.rubyforge_project = "istart-rails"
 
