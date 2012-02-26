@@ -1,7 +1,9 @@
 jQuery ->
   # Disable submit input after form submission
   $(document).on "submit", 'form', (event) ->
-    $('input[type=submit]', @).attr('disabled', 'disabled')
+    submit = $('input[type=submit]', @)
+    submit.attr('disabled', 'disabled')
+    submit.val(submit.data('loading-text')) if submit.data('loading-text')
 
   # External links
   $(document).on "click", 'a.external', (event) ->

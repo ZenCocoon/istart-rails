@@ -4,7 +4,7 @@ iStart-Rails is a set of common helpers to improve your app and speed up it's de
 
 ## Helpers
 
-* Disable submit input after form submission
+* Disable submit input after form submission (update value with data-loading-text if present)
 * Open external links in new window (links must have the class name `external`)
 * Consider element with `data-link-url` as links (also support opening in new window with the class name `external`)
 * Init [Chosen](http://harvesthq.github.com/chosen/) if in use
