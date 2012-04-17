@@ -1,6 +1,13 @@
 ### Dev
 
-[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.3...master)
+[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.4...master)
+
+### 0.0.4 / 2012-04-17
+
+[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.3...v0.0.4)
+
+* Enhancements
+  * Add Twitter Bootstrap 2 support to datatables
 
 ### 0.0.3 / 2012-04-17
 
