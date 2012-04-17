@@ -21,4 +21,6 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
   s.add_runtime_dependency "jquery-rails"
+  s.add_runtime_dependency "chosen-rails"
+  s.add_runtime_dependency "jquery-datatables-rails"
 end

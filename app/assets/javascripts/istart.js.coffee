@@ -1,3 +1,7 @@
+###
+//= require chosen-jquery
+//= require dataTables/jquery.dataTables
+###
 jQuery ->
   # Disable submit input after form submission
   $(document).on "submit", 'form', (event) ->
@@ -20,3 +24,7 @@ jQuery ->
 
   # Chosen: http://harvesthq.github.com/chosen/
   $(".chzn-select").chosen()
+
+  # DataTables: http://github.com/rweng/jquery-datatables-rails
+  $('.datatables').dataTable
+    sPaginationType: 'full_numbers'
