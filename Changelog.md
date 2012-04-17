@@ -1,6 +1,14 @@
 ### Dev
 
-[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.4...master)
+[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.5...master)
+
+### 0.0.5 / 2012-04-17
+
+[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.4...v0.0.5)
+
+* Fix
+  * Fix datatables' tables classname to use `datatable`
+
 
 ### 0.0.4 / 2012-04-17
 
