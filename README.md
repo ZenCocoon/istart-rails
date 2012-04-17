@@ -8,7 +8,7 @@ iStart-Rails is a set of common helpers to improve your app and speed up it's de
 * Open external links in new window (links must have the class name `external`)
 * Consider element with `data-link-url` as links (also support opening in new window with the class name `external`)
 * Init [Chosen](http://harvesthq.github.com/chosen/) if in use
-* Init [DataTables](http://github.com/rweng/jquery-datatables-rails) if in use
+* Init [DataTables](http://github.com/rweng/jquery-datatables-rails) if in use. Add the class `.datatable` to any table to activate
 
 ## Requirements
 
@@ -27,12 +27,13 @@ Within `app/assets/javascripts/application.js` add the following
     ...
     //= require chosen-jquery (optional)
     //= require dataTables/jquery.dataTables (optional)
+    //= require dataTables/jquery.dataTables.bootstrap (optional)
     //= require istart
 
 Within `app/assets/stylesheets/application.css` add the following
 
     *= require_self
-    *= require dataTables/jquery.dataTables (optional)
+    *= require dataTables/jquery.dataTables.bootstrap (optional)
     ...
 
 ## License
