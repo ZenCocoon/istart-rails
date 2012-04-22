@@ -33,8 +33,8 @@ jQuery ->
       "fnStateLoad": (oSettings) ->
         JSON.parse localStorage.getItem('DataTables_'+window.location.pathname)
       "aoColumnDefs": [
-        { "bSortable": false, "aTargets": [ "sort-no" ] },,
-        { "sType": "string",  "aTargets": [ "sort-as-string" ] }
+        { "bSortable": false, "aTargets": [ "sort-no" ] },
+        { "sType": "string",  "aTargets": [ "sort-as-string" ] },
         { "sType": "numeric", "aTargets": [ "sort-as-numeric" ] },
         { "sType": "date",    "aTargets": [ "sort-as-date" ] },
         { "sType": "dom",     "aTargets": [ "sort-as-dom" ] }
