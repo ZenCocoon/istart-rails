@@ -1,6 +1,14 @@
 ### Dev
 
-[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.5...master)
+[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.6...master)
+
+### 0.0.6 / 2012-04-22
+
+[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.5...v0.0.6)
+
+* Enhancements
+  * Add datatables' sorting options by using classnames on columns' headers `sort-as-TYPE`
+  * Add datatables's LocalStorage to save last state
 
 ### 0.0.5 / 2012-04-17
 
