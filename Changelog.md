@@ -1,6 +1,13 @@
 ### Dev
 
-[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.6...master)
+[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.7...master)
+
+### 0.0.7 / 2012-04-22
+
+[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.6...v0.0.7)
+
+* Fix
+  * Fix typo
 
 ### 0.0.6 / 2012-04-22
 
