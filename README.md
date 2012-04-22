@@ -32,8 +32,9 @@ Within `app/assets/javascripts/application.js` add the following
 
 Within `app/assets/stylesheets/application.css` add the following
 
-    *= require_self
+    *= require chosen (optional)
     *= require dataTables/jquery.dataTables.bootstrap (optional)
+    *= require_self
     ...
 
 ## License
