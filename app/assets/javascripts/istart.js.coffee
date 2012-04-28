@@ -24,20 +24,26 @@ jQuery ->
 
   # DataTables: http://datatables.net/
   try
-    $('.datatable').dataTable
-      "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>"
-      "sPaginationType": "bootstrap"
-      "bStateSave": true
-      "fnStateSave": (oSettings, oData) ->
-        localStorage.setItem 'DataTables_'+window.location.pathname, JSON.stringify(oData)
-      "fnStateLoad": (oSettings) ->
-        JSON.parse localStorage.getItem('DataTables_'+window.location.pathname)
-      "aoColumnDefs": [
-        { "bSortable": false, "aTargets": [ "sort-no" ] },
-        { "sType": "string",  "aTargets": [ "sort-as-string" ] },
-        { "sType": "numeric", "aTargets": [ "sort-as-numeric" ] },
-        { "sType": "date",    "aTargets": [ "sort-as-date" ] },
-        { "sType": "dom",     "aTargets": [ "sort-as-dom" ] }
-      ]
-      "oLanguage":
-        "sLengthMenu": "_MENU_ records per page"
+    for table in $('.datatable')
+      do (table) ->
+        table = $(table)
+        datatable = table.dataTable
+          "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>"
+          "sPaginationType": "bootstrap"
+          "bStateSave": true
+          "fnStateSave": (oSettings, oData) ->
+            localStorage.setItem 'DataTables_'+window.location.pathname, JSON.stringify(oData)
+          "fnStateLoad": (oSettings) ->
+            JSON.parse localStorage.getItem('DataTables_'+window.location.pathname)
+          "aoColumnDefs": [
+            { "bSortable": false, "aTargets": [ "sort-no" ] },
+            { "sType": "string",  "aTargets": [ "sort-as-string" ] },
+            { "sType": "numeric", "aTargets": [ "sort-as-numeric" ] },
+            { "sType": "date",    "aTargets": [ "sort-as-date" ] },
+            { "sType": "dom",     "aTargets": [ "sort-as-dom" ] }
+          ]
+          "oLanguage":
+            "sLengthMenu": "_MENU_ records per page"
+        if table.hasClass('fixed_header')
+          new FixedHeader datatable,
+            "offsetTop": 40
