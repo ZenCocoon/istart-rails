@@ -1,6 +1,13 @@
 ### Dev
 
-[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.7...master)
+[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.8...master)
+
+### 0.0.8 / 2012-04-28
+
+[full changelog](http://github.com/ZenCocoon/istart-rails/compare/v0.0.7...v0.0.8)
+
+* Enhancements
+  * Add DataTables's FixHeader support
 
 ### 0.0.7 / 2012-04-22
 
