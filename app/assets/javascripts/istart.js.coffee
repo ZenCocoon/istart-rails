@@ -31,6 +31,7 @@ jQuery ->
           "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>"
           "sPaginationType": "bootstrap"
           "bStateSave": true
+          "iDisplayLength": table.data("datatable-display-length") || 10
           "fnStateSave": (oSettings, oData) ->
             localStorage.setItem 'DataTables_'+window.location.pathname, JSON.stringify(oData)
           "fnStateLoad": (oSettings) ->
