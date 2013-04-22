@@ -36,6 +36,8 @@ jQuery ->
             localStorage.setItem 'DataTables_'+window.location.pathname, JSON.stringify(oData)
           "fnStateLoad": (oSettings) ->
             JSON.parse localStorage.getItem('DataTables_'+window.location.pathname)
+          "bSort": !table.data("datatable-sort-no")?
+          "aaSorting": []
           "aoColumnDefs": [
             { "bSortable": false, "aTargets": [ "sort-no" ] },
             { "sType": "string",  "aTargets": [ "sort-as-string" ] },
